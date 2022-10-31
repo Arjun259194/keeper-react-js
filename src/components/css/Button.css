@@ -1,0 +1,20 @@
+button {
+  opacity: 0;
+  pointer-events: none;
+
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 2rem;
+  padding: .25rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  button {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+  

@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: .5rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+
+.heading img {
+  aspect-ratio: 1/1;
+  width: 3rem;
+  height: 3rem;
+  margin-inline:.25rem;
+  rotate: 30deg;
+  transition: rotate 0.5s;
+}
+
+.heading:hover img {
+  rotate: 0deg;
+}
+
+@media (max-width: 767px) {
+  .heading .heading__text {
+    font-size: 1.25rem;
+  }
+}
