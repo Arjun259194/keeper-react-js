@@ -1,18 +1,21 @@
-button {
-  opacity: 0;
-  pointer-events: none;
-
+.icon__btn {
   aspect-ratio: 1/1;
   border: none;
-  border-radius: 2rem;
+  border-radius: .25rem;
   padding: .25rem;
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.for__mobile {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
 @media (max-width: 768px) {
-  button {
+  .for__mobile {
     opacity: 1;
     pointer-events: all;
   }

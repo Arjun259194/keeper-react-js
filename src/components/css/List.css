@@ -1,0 +1,17 @@
+.list__card {
+  padding: .5rem;
+  box-shadow: 0rem 0.25rem 0.25rem #58585898;
+  border-radius: 1rem;
+  background-color: white;
+}
+.title {
+  font-size: 1.8rem;
+}
+.timestamp {
+  color: gray;
+  font-size: .8rem;
+}
+.items {
+  padding: 1rem .25rem;
+  display: grid;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./css/Navbar.css";
-import { Button } from "./Button";
+import { IconButton } from "./IconButton";
 
 export const Navbar = ({ fg, bg }) => {
   const [toggle, setToggle] = useState(false);
@@ -21,13 +21,13 @@ export const Navbar = ({ fg, bg }) => {
   return (
     <>
       {!toggle && (
-        <Button
+        <IconButton
           bg="lightgreen"
           fontClr="black"
           onClick={onToggle}
           text="Menu"
-          H='2.25rem'
-          W="2.25rem"
+          S='2.25rem'
+          forMobile={true}
         />
       )}
       <nav style={navStyle}>
@@ -49,13 +49,13 @@ export const Navbar = ({ fg, bg }) => {
           </li>
           <li>
             {toggle && (
-              <Button
+              <IconButton
                 bg="crimson"
                 fontClr="white"
                 onClick={onToggle}
                 text='close'
-                H='2.25rem'
-                W="2.25rem"
+                S='2.25rem'
+                forMobile={true}
               />
             )}
           </li>

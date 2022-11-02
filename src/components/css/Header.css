@@ -2,23 +2,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
   padding: .5rem;
 }
 
 .heading {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-
 
 .heading img {
   aspect-ratio: 1/1;
   width: 3rem;
   height: 3rem;
-  margin-inline:.25rem;
+  margin-inline: .25rem;
   rotate: 30deg;
-  transition: rotate 0.5s;
+  transition: rotate 1s;
 }
 
 .heading:hover img {

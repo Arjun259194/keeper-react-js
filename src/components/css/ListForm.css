@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+form .form__input {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+form .form__input label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form .form__input input {
+  padding: .25rem;
+  border: 2px solid black;
+  border-radius: .25rem;
+}
+
+form .final__buttons {
+  padding: 1rem;
+  display: flex;
+}
+
+form .final__buttons > * {
+  margin-inline:.5rem;
+}

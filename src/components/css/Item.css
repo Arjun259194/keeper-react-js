@@ -1,0 +1,15 @@
+.item {
+  margin: .25rem;
+  padding: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(214, 214, 214);
+  border-radius: .25rem;
+	cursor:pointer;
+}
+
+.done {
+  border-left: 4px solid green;
+  text-decoration: line-through;
+}
