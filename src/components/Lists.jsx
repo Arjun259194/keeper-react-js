@@ -1,7 +1,15 @@
-import { List } from "./List";
 import "./css/Lists.css";
+import { List } from "./List";
+import { AddCard } from "./AddCard";
 
-export const Lists = ({ lists, toggleForm, toggleTaskDone }) => {
+export const Lists = ({
+  lists,
+  toggleForm,
+  toggleTaskDone,
+  removeLists,
+  addTaskToList,
+  removeTask,
+}) => {
   return (
     <section className="lists">
       {lists.map((list) => (
@@ -10,9 +18,12 @@ export const Lists = ({ lists, toggleForm, toggleTaskDone }) => {
           key={list._id}
           listId={list._id}
           toggleTaskDone={toggleTaskDone}
+          removeLists={removeLists}
+          addTaskToList={addTaskToList}
+          removeTask={removeTask}
         />
       ))}
-      {/* <AddCard /> */}
+      <AddCard onClick={toggleForm} />
     </section>
   );
 };

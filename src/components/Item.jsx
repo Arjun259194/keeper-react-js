@@ -1,7 +1,7 @@
 import { IconButton } from "./IconButton";
 import "./css/Item.css";
 
-export const Item = ({ text, done, onDbClick, index, listId }) => {
+export const Item = ({ text, done, onDbClick, index, listId, removeTask }) => {
   return (
     <span
       className={`item ${done ? "done" : ""}`}
@@ -17,6 +17,10 @@ export const Item = ({ text, done, onDbClick, index, listId }) => {
         fontClr="white"
         text="close"
         forMobile={false}
+        onClick={() => {
+          console.log("clicked");
+          removeTask(listId,index)
+        }}
       />
     </span>
   );

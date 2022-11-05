@@ -3,7 +3,14 @@ import { useState } from "react";
 import { ListForm } from "./ListForm";
 import { Lists } from "./Lists";
 
-export const Main = ({ lists, toggleTaskDone }) => {
+export const Main = ({
+  lists,
+  toggleTaskDone,
+  addList,
+  removeLists,
+  addTaskToList,
+  removeTask,
+}) => {
   const [showForm, setShowForm] = useState(false);
 
   const toggleForm = () => {
@@ -12,8 +19,15 @@ export const Main = ({ lists, toggleTaskDone }) => {
 
   return (
     <main className="container">
-      {showForm && <ListForm />}
-      <Lists lists={lists} toggleTaskDone={toggleTaskDone} />
+      {showForm && <ListForm toggleForm={toggleForm} addList={addList} />}
+      <Lists
+        lists={lists}
+        toggleTaskDone={toggleTaskDone}
+        toggleForm={toggleForm}
+        removeLists={removeLists}
+        addTaskToList={addTaskToList}
+        removeTask={removeTask}
+      />
     </main>
   );
 };
