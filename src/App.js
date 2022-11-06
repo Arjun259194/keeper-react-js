@@ -12,7 +12,12 @@ function App() {
       _id: getRandomId(),
       title: title,
       date: getCurrDate(),
-      tasks: []
+      tasks: [
+        {
+          text: "This is demo task",
+          done: false
+        }
+      ]
     }])
   }
 
